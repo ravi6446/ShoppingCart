@@ -14,5 +14,7 @@
     <string name="delete_from_cart">Remove Item</string>
     <string name="call_vendor">Call Vendor</string>
     <string name="total">Total: </string>
+    <string name="simple_activity_transition">Transition</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

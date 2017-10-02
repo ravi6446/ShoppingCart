@@ -30,6 +30,7 @@
                 android:contentDescription="@string/product_image"
                 android:layout_margin="5dp"
                 android:layout_centerHorizontal="true"
+                android:transitionName="@string/simple_activity_transition"
                 android:src="@mipmap/ic_launcher"/>
 
             <!--<ProgressBar-->
