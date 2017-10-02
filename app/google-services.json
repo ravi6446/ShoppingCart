@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "427624920371",
+    "firebase_url": "https://myfirebaseapps-5869f.firebaseio.com",
+    "project_id": "myfirebaseapps-5869f",
+    "storage_bucket": "myfirebaseapps-5869f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427624920371:android:cf10e0f71a3f34d2",
+        "android_client_info": {
+          "package_name": "com.ravi.practiceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427624920371-1pnq36kvghtr2of42qn1jd7gkrvac5u3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravi.practiceapp",
+            "certificate_hash": "0b1ed9db0e6801cd049d2ae0d3d0c0707dae860f"
+          }
+        },
+        {
+          "client_id": "427624920371-56gonf04d9a3nub07skk55at3dig8l85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHFne7SNujeLm_3xdWi6QSrXYtJ5yp8D4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427624920371-56gonf04d9a3nub07skk55at3dig8l85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
