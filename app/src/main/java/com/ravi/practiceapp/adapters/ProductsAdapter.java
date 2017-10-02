@@ -1,8 +1,11 @@
 package com.ravi.practiceapp.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -80,11 +83,20 @@ public class ProductsAdapter extends  RecyclerView.Adapter<ProductsAdapter.ViewH
         holder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mIntent = new Intent(mContext, ProductDetailsActivity.class);
+               /* Intent mIntent = new Intent(mContext, ProductDetailsActivity.class);
                // mIntent.putStringArrayListExtra("productImages",(ArrayList<String>) mProductList.get(position).getProductGallery());
                 mIntent.putExtra("productName",mProductList.get(holder.getAdapterPosition()).getProductname());
                 mIntent.putExtra("productImages",(ArrayList)mProductList.get(holder.getAdapterPosition()).getProductGallery());
-                mContext.startActivity(mIntent);
+                mContext.startActivity(mIntent);*/
+
+                //share element code
+                Intent mIntent = new Intent(mContext, ProductDetailsActivity.class);
+                ActivityOptionsCompat options = ActivityOptionsCompat.
+                        makeSceneTransitionAnimation((Activity) mContext,holder.productImage,ViewCompat.getTransitionName(holder.productImage));
+                mIntent.putExtra("productImage",mProductList.get(holder.getAdapterPosition()).getProductImg());
+                mIntent.putExtra("productName",mProductList.get(holder.getAdapterPosition()).getProductname());
+                mIntent.putExtra("productImages",(ArrayList)mProductList.get(holder.getAdapterPosition()).getProductGallery());
+                mContext.startActivity(mIntent, options.toBundle());
             }
         });
 
